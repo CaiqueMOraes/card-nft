@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 350px;
+    margin: 24px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-top {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-top img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    display: none;
+    border-radius: 12px;
+}
+
+.overlay img {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-top:hover .overlay {
+    display: flex;
+    cursor: pointer;
+}
+
+h2 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+span#description {
+    color: hsl(215, 51%, 70%);
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+.value {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#information {
+    color: hsl(178, 100%, 50%);
+}
+
+#information img{
+    padding-right: 5px;
+    margin-bottom: -2px;
+}
+
+#time {
+    color: hsl(215, 51%, 70%);
+}
+
+#time img {
+    padding-right: 5px;
+    margin-bottom: -2px;
+}
+
+#creator {
+    border-top: 1px solid hsl(215, 51%, 70%);
+    margin-top: 1rem;
+}
+
+.values {
+    margin-top: 10px;
+    display: flex;
+}
+
+.values img {
+    width: 34px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#creation,
+#author {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#creation {
+    color:  hsl(215, 51%, 70%);
+    margin-right: 4px;
+}
+
+#author {
+    color: white;
+}
+
+#author:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
